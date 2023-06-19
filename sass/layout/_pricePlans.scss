@@ -1,0 +1,88 @@
+@use "../../sass/abstracts/colors" as *;
+
+.pricePlans-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.3rem;
+  width: 100%;
+  &__pricePlan {
+    border-radius: 1.3rem;
+    background-color: white;
+    min-width: 20rem;
+    padding: 2rem;
+    box-shadow: 0rem 0rem 1rem -0.5rem $Blue-400;
+  }
+
+  div {
+    border-bottom: 1px solid $Blue-200;
+    margin-inline: auto;
+    width: 92%;
+  }
+  button {
+    background-image: $Gradient;
+    border-radius: 0.6rem;
+    border: none;
+    margin-top: 2rem;
+    height: 2.8rem;
+    width: 100%;
+    color: $Blue-100;
+    text-transform: uppercase;
+    font-weight: 700;
+    word-spacing: 0.255rem;
+    cursor: pointer;
+    &:hover {
+      color: hsl(240, 40%, 60%);
+      background-color: white;
+      border: 1px solid $Blue-400;
+      background-image: none;
+    }
+  }
+  &__professionalPlan {
+    background-image: $Gradient;
+    color: $Blue-100;
+    div {
+      color: inherit;
+    }
+    button {
+      background-color: $Blue-100;
+      background-image: none;
+      color: hsl(237, 63%, 64%);
+      &:hover {
+        border: 1px solid white;
+        color: white;
+        background-color: rgb(0, 0, 0, 0);
+      }
+    }
+  }
+}
+@media (min-width: 1150px) {
+  main {
+    margin-top: 7vh;
+  }
+  .pricePlans-wrapper {
+    flex-direction: row;
+    gap: 0;
+    &__professionalPlan {
+      scale: 1.1;
+    }
+  }
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 900;
+  color: $Blue-400;
+  padding-bottom: 1.6rem;
+}
+
+.inactive {
+  display: none;
+}
+.priceActive {
+  display: none;
+}
+.active {
+  display: block;
+}

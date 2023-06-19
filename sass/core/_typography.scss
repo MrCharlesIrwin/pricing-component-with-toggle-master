@@ -1,0 +1,24 @@
+@use "../../sass/abstracts/colors" as *;
+
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: .5rem;
+    margin-bottom:2rem;
+    line-height: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+@media (min-width:1200px) {
+h2 {
+    margin-top: 2rem;
+
+}
+}
+body {
+    color: $Blue-300;
+    font-weight: 600;
+}

@@ -1,0 +1,14 @@
+@use "../../sass/abstracts/colors" as *;
+body {
+  margin: 0;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $Blue-100;
+
+  main {
+    width: 360px;
+  }
+}
